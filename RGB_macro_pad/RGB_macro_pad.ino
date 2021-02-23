@@ -1,4 +1,9 @@
 #include <FastLED.h>
+#include <RotaryEncoder.h>
+#include <Bounce.h>
+#include <Keypad.h>
+#include <Keyboard.h>
+
 #define NUM_LEDS_PER_STRIP 20
 #define DATA_PIN 7
 #define NUM_STRIPS 1
@@ -6,10 +11,7 @@
 #define SATURATION 255
 #define MAX_BRIGHTNESS 255
 
-#include <RotaryEncoder.h>
-#include <Bounce.h>
-#include <Keypad.h>
-#include <Keyboard.h>
+
 
 Bounce button0 = Bounce(8, 10);
 Bounce button1 = Bounce(9, 10);
